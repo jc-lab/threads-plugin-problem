@@ -1,0 +1,21 @@
+{
+  "name": "zeromon-agent-service-node",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack --config webpack.config.js -p"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.4",
+    "threads-plugin": "^1.2.0",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@babel/types": "^7.7.4",
+    "threads": "^1.0.0"
+  }
+}
