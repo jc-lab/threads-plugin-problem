@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const fs = require('fs');
+const NodeExternals = require('webpack-node-externals');
 const ThreadPlugin = require('threads-plugin');
 
 const TS_LOADER = {
@@ -38,5 +39,6 @@ module.exports = {
     plugins: [new ThreadPlugin()],
     optimization: {
         minimize: false
-    }
+    },
+    externals: [NodeExternals()]
 };
